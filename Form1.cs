@@ -32,9 +32,8 @@ namespace Lesson_12
 
             totalPrice = (price * quantity) * 1.13;
 
-            //lblTotalPrice.Text = "Final Price for " + quantity + " " + item + "(s) is: $" + totalPrice.ToString("C"); ;
 
-            if (quantity >= 0 && totalPrice >= 0)
+            if (quantity > 0 && totalPrice > 0)
             {
                 lblTotalPrice.Text = "Final Price for " + quantity + " " + item + "(s) is: " + totalPrice.ToString("C");
             }
